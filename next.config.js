@@ -17,6 +17,9 @@ module.exports = {
           events: false,
           // fixes sentry dependencies
           process: false
+         //
+         read_line: false,
+         child_process: false
         }
       };
     }
