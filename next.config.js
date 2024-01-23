@@ -18,7 +18,7 @@ module.exports = {
           // fixes sentry dependencies
           process: false,
          //
-         read_line: false,
+         readline: false,
          child_process: false
         }
       };
