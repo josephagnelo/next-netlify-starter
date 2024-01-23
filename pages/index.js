@@ -100,10 +100,6 @@ app.get('/', startGame);
 app.get('/audio', playAudio);
 app.get('/check', checkSpelling);
 
-// Start the server
-app.listen(port, () => {
-    console.log(`Server is running at http://localhost:${port}`);
-});
 
 
 export default function Home() {
