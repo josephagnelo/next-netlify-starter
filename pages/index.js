@@ -33,8 +33,11 @@ const startGame = (req, res) => {
       <body>
         <h1>Say the Spelling!</h1>
         <button onclick="playAudio()">Hear the Word</button>
-        <button onclick="submitSpelling()">Submit Spelling</button>
         <button onclick="nextWord()">Next Word</button>
+        <div>
+        <input type="text" id="wordInput" placeholder="Enter word">
+        <button onclick="submitSpelling()">Submit Spelling</button>
+        </div>
         <p id="result"></p>
         <script>
           let score = 0;
@@ -47,7 +50,8 @@ const startGame = (req, res) => {
           }
 
           function submitSpelling() {
-            const spelling = prompt('Enter the spelling:');
+            //const spelling = prompt('Enter the spelling:');
+            const spelling = document.getElementById('wordInput');
             const encodedSpell = encodeURIComponent(spelling);
             fetch('/check?word=${encodeURIComponent(word)}&spelling='+encodedSpell)
               .then(response => response.json())
