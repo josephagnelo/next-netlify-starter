@@ -11,7 +11,7 @@ const readline = require('readline');
 
 
 // 1. read the file spellingbee.txt
-const file = fs.readFileSync('./spellingbee.txt', 'utf8');
+const file = fs.readFileSync('./pages/spellingbee.txt', 'utf8');
 // 2. split the file into an array of words
 const words = file.split('\n');
 
