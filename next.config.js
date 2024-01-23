@@ -16,7 +16,7 @@ module.exports = {
           // fixes mapbox dependencies
           events: false,
           // fixes sentry dependencies
-          process: false
+          process: false,
          //
          read_line: false,
          child_process: false
